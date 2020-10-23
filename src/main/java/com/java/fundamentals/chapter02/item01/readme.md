@@ -12,6 +12,14 @@ public static Boolean valueOf(boolean b) {
        return b ? Boolean.TRUE : Boolean.FALSE;
 }
 ```
+
+As opposed to the public constructor which you have to only call with the name of the 
+class itself as below:
+
+```java
+public Boolean(boolean value) {}
+```
+
 A class can provide its clients with static factory methods instead of, or in addition to, constructors. Providing a static factory method instead of a public constructor has both advantages and disadvantages.
 
 #### Advantages:
