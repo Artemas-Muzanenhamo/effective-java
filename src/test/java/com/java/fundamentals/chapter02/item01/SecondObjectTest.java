@@ -12,9 +12,9 @@ class SecondObjectTest {
     void createObjectWithStaticFactoryMethod() {
         SecondObject secondObject = SecondObject.from("Hello World");
 
-        assertThat(secondObject).isNotNull();
-        assertThat(secondObject.getValue())
-                .isNotEmpty()
+        assertThat(secondObject)
+                .isNotNull()
+                .extracting("value")
                 .isEqualTo("Hello World");
     }
 }

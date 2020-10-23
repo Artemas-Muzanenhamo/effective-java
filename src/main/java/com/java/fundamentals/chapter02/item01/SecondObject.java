@@ -15,8 +15,4 @@ public class SecondObject {
     public static SecondObject from(String value) {
         return new SecondObject(value);
     }
-
-    public String getValue() {
-        return value;
-    }
 }
