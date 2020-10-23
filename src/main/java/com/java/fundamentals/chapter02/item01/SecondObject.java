@@ -15,4 +15,18 @@ public class SecondObject {
     public static SecondObject from(String value) {
         return new SecondObject(value);
     }
+
+    public String getValue() {
+        return value;
+    }
+}
+
+class Example {
+    public static void main(String[] args) {
+//        SecondObject secondObject = new SecondObject(); <-- The Constructor would be private so this line would be invalid
+        SecondObject secondObject = SecondObject.from("Hello World");
+
+//        Will print out our value we passed in the object --> "Hello World"
+        System.out.println(secondObject.getValue());
+    }
 }
