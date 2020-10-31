@@ -6,3 +6,9 @@
 - Java Bean pattern (`NutritionFactsExample2.java`)
     - Invariance cannot be maintained.
     - Maintaining thread safety of the Class is difficult.
+
+- Builder pattern - safe and readable
+    - Parameter validation can be done during object construction.
+    - Can have multiple varargs parameters.
+    - Builder pattern in flexible.
+    - Builder whose parameters have been set makes a fine Abstract Factory.
